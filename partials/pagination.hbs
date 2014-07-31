@@ -1,0 +1,10 @@
+<nav class="nav-paging">
+    <ul role="navigation">
+        {{#if prev}}
+        <li class="prev"><a href="{{page_url prev}}">Posts mais antigos</a></li>
+    	{{/if}}
+    	{{#if next}}
+    	<li class="next"><a href="{{page_url next}}">Posts mais recentes</a></li>
+    	{{/if}}
+    </ul>
+</nav>
