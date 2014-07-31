@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{#post}}
+
+<article class="{{post_class}}">
+  <header class="entry-header">
+    <h1 class="entry-title">{{{title}}}</h1>
+
+      <p class="entry-posted">
+        <time class="published" datetime="{{date format='YYYY-MM-DD'}}">
+          <span class="posted-month">{{date format='MMM'}}</span>
+          <span class="posted-date">{{date format='DD'}}</span>
+          <span class="posted-year">{{date format='YYYY'}}</a>
+        </time>
+      </p>
+
+  </header>
+
+  <div class="entry-content">
+    {{content}}
+  </div>
+
+  {{#if tags}}
+  <footer class="entry-meta">
+    <p class="meta"><b>Tags:</b> {{tags}}</p>
+  </footer>
+  {{/if}}
+  </footer>
+</article>
+
+{{/post}}
+       

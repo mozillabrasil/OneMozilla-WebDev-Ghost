@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id="mozilla-blog">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="{{meta_description}}">
+
+  <!--[if IE]>
+  <meta name="MSSmartTagsPreventParsing" content="true">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script src="{{asset "js/html5.js"}}"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" type="image/ico" href="{{asset "img/favicon.ico"}}">
+  <link rel="stylesheet" type="text/css" media="screen,projection" href="{{asset "style.css"}}">
+  <link rel="stylesheet" type="text/css" media="all" href="https://www.mozilla.org/tabzilla/media/css/tabzilla.css">
+  <link rel="stylesheet" type="text/css" media="print" href="{{asset "css/print.css"}}">
+  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="{{asset "css/ie7.css"}}"><![endif]-->
+
+  <title>{{meta_title}}</title>
+
+  {{ghost_head}}
+
+</head>
+
+<body class="{{body_class}} webdev">
+<div id="page"><div class="wrap">
+
+  <header id="masthead" role="banner" class="image" {{#if @blog.logo}} style="background-image:url({{@blog.logo}});"{{/if}}>
+    <hgroup>
+      <h1 id="site-title">Comunidade Mozilla Brasil</h1>
+      <h2 id="site-description">Nós acreditamos na Web aberta!</h2>
+    </hgroup>
+    <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+  </header>
+
+
+  <nav id="nav-primary" class="menu-home-container">
+    <ul id="menu-home" class="menu">
+      <li><a href="http://www.mozillabrasil.org.br/participe/">Participe</a></li>
+      <li><a href="http://www.mozillabrasil.org.br/sobre/">Sobre</a></li>
+      <li><a href="http://wiki.mozilla.org/Brasil">Wiki</a></li>
+      <li><a href="https://wiki.mozilla.org/Brasil/Eventos">Eventos</a></li>
+    </ul>
+  </nav>
+
+  <main id="content">
+
+  <div id="content-main" class="main" role="main">
+
+  {{{body}}}
+
+  </div><!-- #content-main -->
+
+  </main><!-- #content -->
+</div></div><!-- /.wrap /#page -->
+
+<footer id="site-info" role="contentinfo">
+  <div class="wrap">
+    <p id="foot-logo">
+      <a class="top" href="#page">Retornar ao topo</a>
+      <a class="logo" href="http://mozilla.org" rel="external">Mozilla</a>
+    </p>
+
+    <p id="colophon">
+      Exceto quanto possuir uma <a href="http://www.mozilla.org/en-US/about/legal.html#site" rel="external">observação</a>, o conteúdo deste site está sob a licença <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="external license">Creative Commons Attribution Share-Alike License v3.0</a> ou a versão mais recente.</p>
+
+    <nav id="nav-meta">
+      <ul role="navigation">
+        <li><a href="https://www.mozilla.org/contact/" rel="external">Entre em contato</a></li>
+        <li><a href="https://www.mozilla.org/en-US/privacy/" rel="external">Política de Privacidade</a></li>
+        <li><a href="https://www.mozilla.org/en-US/about/legal.html" rel="external">Avisos Legais</a></li>
+        <li><a href="https://www.mozilla.org/en-US/legal/fraud-report/index.html" rel="external">Denunciar abuso de marcas registradas</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+
+{{ghost_foot}}
+
+</body>
+</html>

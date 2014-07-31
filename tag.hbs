@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{#foreach posts}}
+
+    <article class="{{post_class}}">
+    <header class="entry-header">
+
+      <h2 class="entry-title"><a href="{{url}}" rel="bookmark">{{{title}}}</a></h2>
+
+      <p class="entry-posted">
+        <time class="published" datetime="{{date format='YYYY-MM-DD'}}">
+          <span class="posted-month">{{date format='MMM'}}</span>
+          <span class="posted-date">{{date format='DD'}}</span>
+          <span class="posted-year">{{date format='YYYY'}}</a>
+        </time>
+      </p>
+
+    </header>
+
+    <div class="entry-content">
+     <p>{{excerpt characters="400"}}&hellip;</p>
+     <p><a class="more-link" href="{{url}}">Continue lendo…</a></p>
+    </div>
+
+    {{#if tags}}
+    <footer class="entry-meta">
+      <p class="meta"><b>Tags:</b> {{tags}}</p>
+    </footer>
+    {{/if}}
+
+
+
+  </article><!-- #post -->
+
+{{/foreach}}
+
+{{pagination}}
